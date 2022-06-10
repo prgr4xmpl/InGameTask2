@@ -8,7 +8,7 @@ const char* outputFile;
 bool allWhite = false;
 int n, m;
 
-// testGenerator <n> <m> <outputfile> <white (for all white tests)>
+// testGenerator <n> <m> <outputfile> <-white (for all white tests)>
 int main(int argc, char *argv[]) {
     if (argc < 3) {
         outputFile = "test.in";
@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
         m = atoi(argv[2]);
         outputFile = argv[3];
     }
-    if (strcmp(argv[argc - 1], "white") == 0) {
+    if (strcmp(argv[argc - 1], "-white") == 0) {
         allWhite = true;
     }
     std::cin.tie(0);
