@@ -64,7 +64,7 @@ int main(int argc, char *argv[]) {
             }
         }
     }
-    std::cout << answer << '\n';
+    std::cout << "Answer: " << answer << '\n';
 
 #ifdef _DEBUG
 	std::cerr << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s.\n";
